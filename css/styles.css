@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    margin-inline: auto;
+    max-width: 30em;
+}
+
+article{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    border-radius: .5rem;
+    background-color: pink;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+img{
+    width: 50px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+div > * + * {
+    margin-block-start: .5rem;
+}
+
+article > p{
+    grid-column: span 2;
+}
